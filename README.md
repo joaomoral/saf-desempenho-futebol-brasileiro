@@ -42,6 +42,8 @@ Rscript scripts/Complementar_Rev9c.R
 
 Os resultados são gravados em `resultados/`, sobrescrevendo os arquivos existentes. As sementes aleatórias estão fixadas nos scripts que usam bootstrap e permutação. As versões dos pacotes usadas no script unificado estão em `resultados/00_Sessao_R.txt`.
 
+O wild cluster bootstrap é usado como procedimento complementar de inferência com poucos clusters. O teste de permutação redistribui as trajetórias de tratamento entre clubes; como a adoção da SAF não foi aleatória, sua interpretação como teste de randomização exige uma hipótese de permutabilidade entre clubes que não é garantida. Por isso, os p-valores da permutação devem ser lidos apenas como uma checagem de sensibilidade, e não como evidência causal independente.
+
 ## Observações
 
 - A classificação das SAFs por tipo de controle (investidor, associação, não classificada) vem de reportagens e é exploratória.

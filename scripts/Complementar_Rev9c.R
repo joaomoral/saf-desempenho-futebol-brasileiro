@@ -124,7 +124,11 @@ mundlak <- function(d, y) {
 mund <- bind_rows(cbind(Amostra = "Replica", mundlak(rep_d, "Y_art")), cbind(Amostra = "Principal", mundlak(base, "Y")),
                   cbind(Amostra = "Principal", mundlak(base, "IH")))
 
-# ---- 6. Wild cluster bootstrap-t (residuos restritos, pesos de Webb) e permutacao ----
+# ---- 6. Wild cluster bootstrap-t e permutacao complementar ----
+# A permutacao redistribui trajetorias de tratamento entre clubes. Como a adocao
+# da SAF nao e aleatoria, sua leitura como teste de randomizacao pressuporia
+# permutabilidade sob a hipotese nula, condicao nao garantida neste contexto.
+# Interpretar p_perm apenas como verificacao complementar de sensibilidade.
 dm <- function(A) A - rowMeans(A) %o% rep(1, ncol(A)) - rep(1, nrow(A)) %o% colMeans(A) + mean(A)
 inf_boot <- function(d, y, B = 9999) {
   d <- d %>% arrange(Clube, Ano); G <- n_distinct(d$Clube); T <- n_distinct(d$Ano); N <- G * T; K <- 1 + T
