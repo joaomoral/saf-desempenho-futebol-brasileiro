@@ -27,7 +27,7 @@ resultados/  planilhas, relatórios HTML e registros (logs) gerados pelos script
 
 ## Como executar
 
-Requer R (versão 4.3 ou superior) e os pacotes `readxl`, `dplyr`, `fixest`, `openxlsx` e, para as análises de sensibilidade, `HonestDiD`. O script unificado usa ainda pacotes adicionais, listados no início do arquivo.
+Requer R (versão 4.3 ou superior) e os pacotes `readxl`, `dplyr`, `fixest`, `openxlsx`, `plm` e `lmtest` (réplica) e `HonestDiD` (instalado automaticamente pelos scripts de sensibilidade, se ausente). O script unificado carrega seus pacotes adicionais no início do arquivo.
 
 Execute cada script **a partir da raiz do repositório** (a pasta que contém `dados/`):
 
