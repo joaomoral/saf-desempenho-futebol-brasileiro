@@ -1,0 +1,210 @@
+Painel: 75 clubes, 375 obs
+Clubes da replica: 26 
+                    Especificacao Desfecho    N Clubes Clubes_que_mudam
+1 Todos os clubes nacionais (A-D)       IH 1090    218               45
+        SAF        EP          p       ATT    EP_ATT      p_ATT    F_pre
+1 0.2605591 0.1126794 0.02169335 0.3600405 0.1390473 0.01026673 1.013712
+      p_pre
+1 0.4172145
+            Especificacao Desfecho   N Clubes Clubes_que_mudam       SAF
+1 Populacao de 2021 (A-D)       IH 620    124               25 0.3789537
+         EP          p       ATT    EP_ATT      p_ATT    F_pre       p_pre
+1 0.1470111 0.01112497 0.3997754 0.1803542 0.02848788 3.669684 0.002183831
+               Especificacao Desfecho    N Clubes Clubes_que_mudam      SAF
+1 Verificacao: 218 clubes, Y        Y 1090    218               45 4.206246
+        EP         p ATT EP_ATT p_ATT F_pre p_pre
+1 4.967499 0.3980655  NA     NA    NA    NA    NA
+Participantes da Serie D por ano:
+
+2021 2022 2023 2024 2025 
+  64   64   64   64   64 
+Obs. da Serie D na amostra: 54 | sem correspondencia na aba Serie_D_Fase_Grupos: 0 
+Correlacao entre a posicao final geral da base e a ordem por pontos da fase de grupos (Serie D): 0.682 
+                                              Especificacao   Desfecho   N
+1 Ranking com Serie D ordenada por pontos da fase de grupos Rk125_Dalt 375
+  Clubes Clubes_que_mudam       SAF       EP          p       ATT   EP_ATT
+1     75               24 -8.825043 4.405028 0.04879607 -11.12731 6.393368
+       p_ATT    F_pre     p_pre
+1 0.08593765 1.179929 0.3263549
+
+Rodando bootstrap e permutacao (pode levar alguns minutos)...
+
+Obs. tratadas por grupo: A = 20 B = 9 C = 40 | clubes: A = 6 B = 3 C = 15 
+
+========== RESUMO ==========
+                                             Especificacao   Desfecho    N
+                            Replica (26 clubes, 2022-2024)      Y_art   78
+                  Extensao temporal (26 clubes, 2021-2025)      Y_art  130
+                            Extensao de clubes (75 clubes)      Y_art  375
+                            Replica (26 clubes, 2022-2024)         IH   78
+                  Extensao temporal (26 clubes, 2021-2025)         IH  130
+                            Extensao de clubes (75 clubes)         IH  375
+                                                 Principal          Y  375
+                                                 Principal         IH  375
+                                                 Principal      Rk125  375
+                                                 Principal      Rk150  375
+                                                 Principal      Rk200  375
+                                   Sem Red Bull Bragantino         IH  370
+                              Regra anterior de tratamento         IH  375
+                                    Amostra fixada em 2021         IH  300
+                                   Sem Red Bull Bragantino      Rk125  370
+                              Regra anterior de tratamento      Rk125  375
+                                    Amostra fixada em 2021      Rk125  300
+                           Todos os clubes nacionais (A-D)         IH 1090
+                                   Populacao de 2021 (A-D)         IH  620
+                                Verificacao: 218 clubes, Y          Y 1090
+                                            Sem o Athletic          Y  370
+                                  Athletic tratado em 2023          Y  375
+                Sem o Athletic e sem o Red Bull Bragantino          Y  365
+                                            Sem o Athletic         IH  370
+                                  Athletic tratado em 2023         IH  375
+                Sem o Athletic e sem o Red Bull Bragantino         IH  365
+ Ranking com Serie D ordenada por pontos da fase de grupos Rk125_Dalt  375
+ Clubes Clubes_que_mudam      SAF      EP       p      ATT  EP_ATT   p_ATT
+     26                5  11.1486 13.5407 0.41810       NA      NA      NA
+     26               10   2.7606 11.0185 0.80422       NA      NA      NA
+     75               24   3.0746  5.8362 0.59989       NA      NA      NA
+     26                5   0.2828  0.2712 0.30719       NA      NA      NA
+     26               10   0.1786  0.1947 0.36778       NA      NA      NA
+     75               24   0.3275  0.1714 0.05996       NA      NA      NA
+     75               24   5.0293  9.6638 0.60432  11.0682 10.5636 0.29816
+     75               24   0.3275  0.1714 0.05996   0.4053  0.2231 0.07332
+     75               24  -8.9556  4.6854 0.05983 -11.6604  6.4382 0.07418
+     75               24 -10.8460  5.5897 0.05614 -13.5217  8.2173 0.10410
+     75               24 -14.6269  7.6139 0.05857 -17.2444 11.9899 0.15458
+     74               24   0.3277  0.1717 0.06030   0.4071  0.2237 0.07291
+     75               21   0.3557  0.2198 0.10994   0.4614  0.2314 0.04987
+     60               17   0.1706  0.1790 0.34464   0.2096  0.2343 0.37448
+     74               24  -8.9386  4.6962 0.06094 -11.6771  6.4557 0.07460
+     75               21  -9.4723  6.6231 0.15687 -13.1746  6.9038 0.06023
+     60               17  -3.9175  3.8755 0.31622  -3.6817  5.7245 0.52262
+    218               45   0.2606  0.1127 0.02169   0.3600  0.1390 0.01027
+    124               25   0.3790  0.1470 0.01112   0.3998  0.1804 0.02849
+    218               45   4.2062  4.9675 0.39807       NA      NA      NA
+     74               23   3.9458  9.8579 0.69013   7.9732 10.6246 0.45540
+     75               24   7.5238 10.1164 0.45940  11.3544 10.4998 0.28303
+     73               23   3.6582  9.8970 0.71274   7.6951 10.6683 0.47306
+     74               23   0.2910  0.1717 0.09437   0.3021  0.2095 0.15344
+     75               24   0.4065  0.2005 0.04624   0.4106  0.2170 0.06239
+     73               23   0.2917  0.1721 0.09444   0.3039  0.2101 0.15231
+     75               24  -8.8250  4.4050 0.04880 -11.1273  6.3934 0.08594
+  F_pre    p_pre
+     NA       NA
+     NA       NA
+     NA       NA
+     NA       NA
+     NA       NA
+     NA       NA
+ 1.2571 0.287677
+ 1.8113 0.108466
+ 0.9783 0.446115
+ 0.9997 0.432107
+ 1.0473 0.402063
+ 1.7979 0.111373
+ 1.2247 0.303469
+ 3.6210 0.003995
+ 1.0263 0.415271
+ 1.5156 0.184894
+ 1.7592 0.123335
+ 1.0137 0.417214
+ 3.6697 0.002184
+     NA       NA
+ 1.2559 0.288430
+ 1.2704 0.281414
+ 1.1240 0.357160
+ 1.8096 0.109023
+ 1.8115 0.108429
+ 1.7962 0.111951
+ 1.1799 0.326355
+
+========== EVENTO (Principal) ==========
+ Desfecho   Termo  Estimate Std. Error Pr(>|t|)
+        Y Ano::-4 -44.10784    37.4059  0.24211
+        Y Ano::-3 -17.43355    21.0030  0.40918
+        Y Ano::-2 -13.61765    11.1477  0.22575
+        Y  Ano::0  -2.29085     7.0805  0.74719
+        Y  Ano::1   0.56176    11.5520  0.96135
+        Y  Ano::2  30.01307    15.9704  0.06414
+        Y  Ano::3  35.72549    23.6473  0.13511
+       IH Ano::-4  -1.41676     0.7310  0.05642
+       IH Ano::-3  -0.49026     0.2283  0.03506
+       IH Ano::-2  -0.21805     0.1862  0.24535
+       IH  Ano::0   0.06551     0.1036  0.52898
+       IH  Ano::1   0.45737     0.2047  0.02848
+       IH  Ano::2   0.70966     0.3446  0.04299
+       IH  Ano::3   0.66025     0.5442  0.22892
+    Rk125 Ano::-4  31.23529    20.9458  0.14015
+    Rk125 Ano::-3   4.70806     7.3719  0.52502
+    Rk125 Ano::-2   0.92437     6.6361  0.88960
+    Rk125  Ano::0  -3.78431     2.4065  0.12010
+    Rk125  Ano::1 -12.00000     6.2400  0.05832
+    Rk125  Ano::2 -19.07843    10.0669  0.06198
+    Rk125  Ano::3 -18.75686    14.8530  0.21061
+    Rk150 Ano::-4  44.71569    26.0263  0.08996
+    Rk150 Ano::-3   5.41612     7.5448  0.47510
+    Rk150 Ano::-2   3.02521     7.9540  0.70478
+    Rk150  Ano::0  -4.07026     2.5141  0.10971
+    Rk150  Ano::1 -13.98529     8.2271  0.09335
+    Rk150  Ano::2 -21.88889    12.7596  0.09044
+    Rk150  Ano::3 -22.72745    19.1053  0.23801
+    Rk200 Ano::-4  71.67647    37.5722  0.06031
+    Rk200 Ano::-3   6.83224     8.0415  0.39828
+    Rk200 Ano::-2   7.22689    10.8974  0.50928
+    Rk200  Ano::0  -4.64216     2.8155  0.10343
+    Rk200  Ano::1 -17.95588    12.4961  0.15495
+    Rk200  Ano::2 -27.50980    18.5013  0.14129
+    Rk200  Ano::3 -30.66863    27.8875  0.27502
+
+========== MUNDLAK ==========
+    Amostra Desfecho  coef_mS      EP      p
+1   Replica    Y_art -20.6651 20.2687 0.3177
+2 Principal        Y  13.2372 32.1291 0.6815
+3 Principal       IH  -0.2008  0.5027 0.6907
+
+========== BOOTSTRAP / PERMUTACAO ==========
+    Amostra Desfecho       b       t   p_wcb  p_perm
+1   Replica    Y_art 11.1486  0.8233 0.45055 0.41444
+2   Replica       IH  0.2828  1.0424 0.35844 0.29333
+3 Principal        Y  5.0293  0.5204 0.59786 0.63826
+4 Principal       IH  0.3275  1.9104 0.06951 0.07371
+5 Principal    Rk125 -8.9556 -1.9114 0.06481 0.07661
+
+========== HETEROGENEIDADE ==========
+           Desfecho                  Termo     Coef      EP        p
+SAF_A...1         Y       SAF_A investidor   5.5751 23.6697 0.814442
+SAF_B...2         Y       SAF_B associacao -15.1977  8.4403 0.075837
+SAF_C...3         Y SAF_C nao classificada   9.4151 12.0447 0.436899
+1...4             Y                  A - B  20.7728 24.5657 0.400501
+2...5             Y                  A - C  -3.8400 26.6528 0.885834
+SAF_A...6        IH       SAF_A investidor   0.5849  0.1993 0.004445
+SAF_B...7        IH       SAF_B associacao  -0.2515  0.1948 0.200662
+SAF_C...8        IH SAF_C nao classificada   0.3504  0.2539 0.171738
+1...9            IH                  A - B   0.8364  0.2513 0.001364
+2...10           IH                  A - C   0.2345  0.3261 0.474430
+SAF_A...11    Rk125       SAF_A investidor -10.3826  4.7895 0.033391
+SAF_B...12    Rk125       SAF_B associacao   4.6119  3.2874 0.164823
+SAF_C...13    Rk125 SAF_C nao classificada -11.4475  7.2078 0.116503
+1...14        Rk125                  A - B -14.9945  4.6926 0.002054
+2...15        Rk125                  A - C   1.0650  8.6723 0.902598
+
+========== DESCRITIVAS ==========
+                  Grupo   N Pontos Aproveit      Y    IH
+1         Amostra total 375  39.96    46.93 113.35 2.987
+2               Sem SAF 306  39.41    46.72 110.97 2.953
+3               Com SAF  69  42.45    47.91 123.88 3.140
+4     Serie A - sem SAF  75  52.65    46.19 210.61 4.462
+5     Serie A - com SAF  25  49.28    43.23 197.12 4.432
+6     Serie B - sem SAF  84  51.11    44.83 153.32 3.448
+7     Serie B - com SAF  16  53.00    46.49 159.00 3.465
+8     Serie C - sem SAF  85  24.67    43.83  49.34 2.438
+9     Serie C - com SAF  15  29.27    51.35  58.53 2.513
+10    Serie D - sem SAF  46  23.67    56.37  23.67 1.564
+11    Serie D - com SAF   8  24.75    58.93  24.75 1.589
+12 Sem divisao nacional  21    NaN      NaN   0.00 0.000
+
+========== MDE ==========
+  Desfecho   media     dp MDE_TWFE MDE_ATT
+1        Y 113.349 82.876  27.0587 29.5781
+2       IH   2.987  1.231   0.4799  0.6247
+
+Arquivo salvo: 17_Complementar_Rev9.xlsx

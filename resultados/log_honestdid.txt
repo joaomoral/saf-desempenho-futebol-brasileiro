@@ -1,0 +1,24 @@
+HonestDiD versao: 0.2.8 
+Maior diferenca de EP vs fixest: 0.000000000000001776357 
+
+========== Desempenho ponderado ==========
+Periodos de evento: -4, -3, -2, 0, 1, 2, 3 | pre = 3 | pos = 4 
+               e    coef     ep
+factor(per)-4 -4 -44.108 37.406
+factor(per)-3 -3 -17.434 21.003
+factor(per)-2 -2 -13.618 11.148
+factor(per)0   0  -2.291  7.080
+factor(per)1   1   0.562 11.552
+factor(per)2   2  30.013 15.970
+factor(per)3   3  35.725 23.647
+
+Mensagens de aviso:
+1: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+2: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+3: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+4: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+Execução interrompida

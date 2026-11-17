@@ -1,0 +1,676 @@
+
+========== INICIO DO SCRIPT DO TCC ==========
+Planilha: C:/Users/moral/OneDrive/Documentos/TCC/SAF/Verificacao_Claude/Base de dados/Dados_TCC_Painel_Modelagem_Rev5.xlsx 
+Pasta dos resultados: C:/Users/moral/OneDrive/Documentos/TCC/SAF/Verificacao_Claude/Rev5 
+
+========== CHECAGEM DA BASE ==========
+Base sem financeiro: 375 observacoes; 75 clubes.
+Base com financeiro: 375 observacoes; 75 clubes.
+Anos: 2021, 2022, 2023, 2024, 2025 
+SAF presente: TRUE 
+Valores de SAF: 0, 1 
+Chaves Clube-Ano duplicadas: 0 
+
+========== ESTATISTICAS DESCRITIVAS ==========
+# A tibble: 1 × 33
+  SAF_N SAF_Media SAF_DP Titulos_N Titulos_Media Titulos_DP Vices_N Vices_Media
+  <int>     <dbl>  <dbl>     <int>         <dbl>      <dbl>   <int>       <dbl>
+1   375     0.184  0.388       375         0.389      0.636     375       0.339
+# ℹ 25 more variables: Vices_DP <dbl>, Terceiros_N <int>,
+#   Terceiros_Media <dbl>, Terceiros_DP <dbl>, Podios_N <int>,
+#   Podios_Media <dbl>, Podios_DP <dbl>, Posicao_Brasileirao_N <int>,
+#   Posicao_Brasileirao_Media <dbl>, Posicao_Brasileirao_DP <dbl>,
+#   Pontos_Brasileirao_N <int>, Pontos_Brasileirao_Media <dbl>,
+#   Pontos_Brasileirao_DP <dbl>, Desempenho_Ponderado_N <int>,
+#   Desempenho_Ponderado_Media <dbl>, Desempenho_Ponderado_DP <dbl>, …
+                             Variavel N_validos N_total Percentual
+Receita_Total           Receita_Total       101     375   26.93333
+Divida_Total             Divida_Total        99     375   26.40000
+Folha_Salarial         Folha_Salarial        84     375   22.40000
+Valor_Elenco             Valor_Elenco       200     375   53.33333
+Gasto_Contratacoes Gasto_Contratacoes       200     375   53.33333
+
+========== MODELOS PRINCIPAIS: SEM FINANCEIRO ==========
+$Titulos
+OLS estimation, Dep. Var.: Titulos
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+     Estimate Std. Error  t value Pr(>|t|) 
+SAF -0.149655   0.104433 -1.43302  0.15606 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.47231     Adj. R2: 0.298373
+                Within R2: 0.004942
+
+$Vices
+OLS estimation, Dep. Var.: Vices
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+    Estimate Std. Error t value Pr(>|t|) 
+SAF 0.156412   0.129414 1.20862  0.23066 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.491664     Adj. R2: 0.167138
+                 Within R2: 0.004981
+
+$Terceiros
+OLS estimation, Dep. Var.: Terceiros
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+     Estimate Std. Error  t value Pr(>|t|) 
+SAF -0.105233   0.078864 -1.33437  0.18618 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.341573     Adj. R2: 0.027368
+                 Within R2: 0.004673
+
+$Podios
+OLS estimation, Dep. Var.: Podios
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+     Estimate Std. Error   t value Pr(>|t|) 
+SAF -0.098476   0.134329 -0.733099  0.46581 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.569897     Adj. R2: 0.498237
+                 Within R2: 0.001475
+
+$Acesso
+OLS estimation, Dep. Var.: Acesso
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+     Estimate Std. Error   t value Pr(>|t|) 
+SAF -0.071449   0.109871 -0.650298  0.51751 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.344594     Adj. R2: -0.025891
+                 Within R2:  0.002122
+
+$Rebaixamento
+OLS estimation, Dep. Var.: Rebaixamento
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+    Estimate Std. Error   t value Pr(>|t|) 
+SAF -0.01682   0.082392 -0.204147   0.8388 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.35309     Adj. R2: -0.077101
+                Within R2:  1.122e-4
+
+$Pontos_Brasileirao
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 354
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+    Estimate Std. Error   t value Pr(>|t|) 
+SAF  -1.3887    2.51951 -0.551179  0.58317 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 9.20192     Adj. R2: 0.611487
+                Within R2: 0.001093
+
+$Desempenho_Ponderado
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 375
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+    Estimate Std. Error  t value Pr(>|t|) 
+SAF  5.02933    9.66383 0.520428  0.60432 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 32.7     Adj. R2: 0.802489
+             Within R2: 0.001171
+
+$Posicao_Brasileirao
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 354
+Fixed-effects: Clube: 75,  Ano: 5
+Standard-errors: Clustered (Clube) 
+     Estimate Std. Error   t value Pr(>|t|) 
+SAF -0.453996    1.87319 -0.242365  0.80917 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 6.33232     Adj. R2: 0.155377
+                Within R2: 2.468e-4
+
+
+========== MODELOS COM CONTROLES FINANCEIROS ==========
+$Titulos_log_Receita
+OLS estimation, Dep. Var.: Titulos
+Observations: 101
+Fixed-effects: Clube: 22,  Ano: 5
+Standard-errors: Clustered (Clube) 
+             Estimate Std. Error   t value Pr(>|t|) 
+SAF         -0.431535   0.267506 -1.613178  0.12163 
+log_Receita  0.049537   0.225589  0.219591  0.82831 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.635982     Adj. R2: 0.254733
+                 Within R2: 0.021575
+
+$Titulos_log_Divida
+OLS estimation, Dep. Var.: Titulos
+Observations: 99
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error   t value Pr(>|t|) 
+SAF        -0.396032   0.293027 -1.351524  0.19162 
+log_Divida -0.021985   0.033393 -0.658357  0.51782 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.646748     Adj. R2: 0.243493
+                 Within R2: 0.021801
+
+$Titulos_log_Folha
+OLS estimation, Dep. Var.: Titulos
+Observations: 81
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+           Estimate Std. Error  t value Pr(>|t|)    
+SAF       -0.651493   0.221386 -2.94279 0.008046 ** 
+log_Folha  0.548897   0.333995  1.64343 0.115924    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.642979     Adj. R2: 0.264287
+                 Within R2: 0.050917
+
+$Titulos_log_Valor_Elenco
+OLS estimation, Dep. Var.: Titulos
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                  Estimate Std. Error   t value Pr(>|t|) 
+SAF              -0.126212   0.185660 -0.679802  0.50011 
+log_Valor_Elenco -0.060854   0.137035 -0.444075  0.65912 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.527412     Adj. R2: 0.308605
+                 Within R2: 0.004721
+
+$Titulos_log_Gasto_Contratacoes
+OLS estimation, Dep. Var.: Titulos
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                        Estimate Std. Error   t value Pr(>|t|) 
+SAF                    -0.173169   0.173796 -0.996391  0.32439 
+log_Gasto_Contratacoes  0.008935   0.007853  1.137813  0.26122 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.526508     Adj. R2: 0.310972
+                 Within R2: 0.008129
+
+$Podios_log_Receita
+OLS estimation, Dep. Var.: Podios
+Observations: 101
+Fixed-effects: Clube: 22,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error  t value Pr(>|t|) 
+SAF         0.186649   0.231709 0.805528  0.42954 
+log_Receita 0.164976   0.292994 0.563069  0.57935 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.689933     Adj. R2: 0.57573 
+                 Within R2: 0.009465
+
+$Podios_log_Divida
+OLS estimation, Dep. Var.: Podios
+Observations: 99
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+           Estimate Std. Error  t value Pr(>|t|)    
+SAF        0.191295   0.231660 0.825758 0.418683    
+log_Divida 0.060110   0.024367 2.466833 0.022788 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.689296     Adj. R2: 0.586217
+                 Within R2: 0.018972
+
+$Podios_log_Folha
+OLS estimation, Dep. Var.: Podios
+Observations: 81
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+          Estimate Std. Error  t value Pr(>|t|)    
+SAF       0.139581   0.324621 0.429981 0.671807    
+log_Folha 0.749365   0.290776 2.577121 0.017995 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.653446     Adj. R2: 0.620139
+                 Within R2: 0.051276
+
+$Podios_log_Valor_Elenco
+OLS estimation, Dep. Var.: Podios
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                  Estimate Std. Error  t value Pr(>|t|) 
+SAF               0.106024   0.157158  0.67463  0.50336 
+log_Valor_Elenco -0.125150   0.134278 -0.93202  0.35630 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.581217     Adj. R2: 0.582524
+                 Within R2: 0.004396
+
+$Podios_log_Gasto_Contratacoes
+OLS estimation, Dep. Var.: Podios
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                        Estimate Std. Error   t value Pr(>|t|) 
+SAF                     0.073564   0.141318  0.520556  0.60523 
+log_Gasto_Contratacoes -0.002868   0.008896 -0.322350  0.74868 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.582216     Adj. R2: 0.581087
+                 Within R2: 9.709e-4
+
+$Desempenho_Ponderado_log_Receita
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 101
+Fixed-effects: Clube: 22,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error   t value Pr(>|t|)    
+SAF         -2.22580     20.116 -0.110648 0.912946    
+log_Receita 33.48801     14.281  2.344941 0.028935 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 32.0     Adj. R2: 0.438899
+             Within R2: 0.079455
+
+$Desempenho_Ponderado_log_Divida
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 99
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+           Estimate Std. Error  t value Pr(>|t|) 
+SAF         4.19027   20.35274 0.205883  0.83896 
+log_Divida  1.30867    1.04429 1.253164  0.22460 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 33.2     Adj. R2: 0.392613
+             Within R2: 0.003942
+
+$Desempenho_Ponderado_log_Folha
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 81
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+          Estimate Std. Error   t value Pr(>|t|)    
+SAF       -15.9636    22.0273 -0.724720 0.477017    
+log_Folha  44.1083    24.0574  1.833463 0.081661 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 29.4     Adj. R2: 0.409256
+             Within R2: 0.075669
+
+$Desempenho_Ponderado_log_Valor_Elenco
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                 Estimate Std. Error   t value Pr(>|t|) 
+SAF              -6.08888    12.6908 -0.479786  0.63370 
+log_Valor_Elenco  7.31200    11.0775  0.660075  0.51257 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 29.9     Adj. R2: 0.535177
+             Within R2: 0.005624
+
+$Desempenho_Ponderado_log_Gasto_Contratacoes
+OLS estimation, Dep. Var.: Desempenho_Ponderado
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                        Estimate Std. Error   t value Pr(>|t|) 
+SAF                    -4.430362  13.460165 -0.329146  0.74357 
+log_Gasto_Contratacoes  0.246384   0.643787  0.382710  0.70374 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 30.0     Adj. R2: 0.533381
+             Within R2: 0.001782
+
+$Pontos_Brasileirao_log_Receita
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 101
+Fixed-effects: Clube: 22,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error   t value Pr(>|t|) 
+SAF         -5.82014    4.58612 -1.269077  0.21830 
+log_Receita -1.77068    3.77565 -0.468974  0.64392 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 9.2202     Adj. R2: 0.202248
+               Within R2: 0.024556
+
+$Pontos_Brasileirao_log_Divida
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 99
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error  t value  Pr(>|t|)    
+SAF        -6.782957   4.188793 -1.61931 0.1210424    
+log_Divida  0.874270   0.275517  3.17321 0.0047795 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 9.13654     Adj. R2: 0.238178
+                Within R2: 0.038365
+
+$Pontos_Brasileirao_log_Folha
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 81
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+           Estimate Std. Error   t value Pr(>|t|) 
+SAF       -7.778308    5.33732 -1.457343  0.16054 
+log_Folha -0.974376    7.33086 -0.132914  0.89559 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 8.3156     Adj. R2: 0.25785 
+               Within R2: 0.035419
+
+$Pontos_Brasileirao_log_Valor_Elenco
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                 Estimate Std. Error   t value Pr(>|t|)    
+SAF              -1.76198    3.67630 -0.479282 0.634059    
+log_Valor_Elenco -8.39012    3.39771 -2.469349 0.017396 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 9.34836     Adj. R2: 0.204161
+                Within R2: 0.071943
+
+$Pontos_Brasileirao_log_Gasto_Contratacoes
+OLS estimation, Dep. Var.: Pontos_Brasileirao
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                        Estimate Std. Error  t value Pr(>|t|) 
+SAF                    -3.722611   3.281630 -1.13438  0.26264 
+log_Gasto_Contratacoes -0.263637   0.211381 -1.24721  0.21877 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 9.59702     Adj. R2: 0.161261
+                Within R2: 0.021915
+
+$Posicao_Brasileirao_log_Receita
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 101
+Fixed-effects: Clube: 22,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error t value Pr(>|t|) 
+SAF          3.08915    1.90722 1.61972  0.12021 
+log_Receita  2.39976    1.69917 1.41231  0.17251 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 4.27947     Adj. R2: 0.150627
+                Within R2: 0.056106
+
+$Posicao_Brasileirao_log_Divida
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 99
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+            Estimate Std. Error  t value  Pr(>|t|)    
+SAF         3.950434   1.865741  2.11735 0.0469562 *  
+log_Divida -0.463208   0.125136 -3.70163 0.0014118 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 4.28383     Adj. R2: 0.167043
+                Within R2: 0.054582
+
+$Posicao_Brasileirao_log_Folha
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 81
+Fixed-effects: Clube: 21,  Ano: 5
+Standard-errors: Clustered (Clube) 
+          Estimate Std. Error t value Pr(>|t|)    
+SAF        3.55972    1.98192 1.79610 0.087603 .  
+log_Folha  3.48978    3.37956 1.03262 0.314110    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 3.97076     Adj. R2: 0.19288 
+                Within R2: 0.067613
+
+$Posicao_Brasileirao_log_Valor_Elenco
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                 Estimate Std. Error  t value Pr(>|t|)    
+SAF               1.03899    1.66101 0.625515 0.534793    
+log_Valor_Elenco  4.09205    1.62452 2.518932 0.015393 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 4.51809     Adj. R2: 0.138959
+                Within R2: 0.07481 
+
+$Posicao_Brasileirao_log_Gasto_Contratacoes
+OLS estimation, Dep. Var.: Posicao_Brasileirao
+Observations: 194
+Fixed-effects: Clube: 46,  Ano: 5
+Standard-errors: Clustered (Clube) 
+                       Estimate Std. Error t value Pr(>|t|) 
+SAF                    2.013054   1.562419 1.28842  0.20418 
+log_Gasto_Contratacoes 0.122675   0.096213 1.27504  0.20884 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 4.64297     Adj. R2: 0.090705
+                Within R2: 0.02296 
+
+
+========== VARIACAO TEMPORAL DA SAF ==========
+Clubes com variacao temporal de SAF: 24 
+Clubes sem variacao temporal de SAF: 51 
+
+========== DESCRITIVAS POR ANO E SAF ==========
+
+========== TESTES DE ESPECIFICACAO E DIAGNOSTICO ==========
+                        outcome                        teste  estatistica
+F...1      Desempenho_Ponderado             F: pooling vs FE  20.40568462
+chisq...2  Desempenho_Ponderado            LM: pooling vs RE 484.56781394
+...3       Desempenho_Ponderado            Hausman: FE vs RE   0.05678682
+...4       Desempenho_Ponderado        Autocorrelacao serial   3.51794207
+...5       Desempenho_Ponderado Dependencia transversal (CD)  -0.87459275
+BP...6     Desempenho_Ponderado     Heterocedasticidade (BP)   0.03871746
+F...7                    Podios             F: pooling vs FE   5.74246851
+chisq...8                Podios            LM: pooling vs RE 187.59218576
+...9                     Podios            Hausman: FE vs RE   0.17823234
+...10                    Podios        Autocorrelacao serial  12.74599444
+...11                    Podios Dependencia transversal (CD)  -1.45337511
+BP...12                  Podios     Heterocedasticidade (BP)   1.49079096
+F...13                  Titulos             F: pooling vs FE   3.03288094
+chisq...14              Titulos            LM: pooling vs RE  68.71233850
+...15                   Titulos            Hausman: FE vs RE   0.31868253
+...16                   Titulos        Autocorrelacao serial   8.70356500
+...17                   Titulos Dependencia transversal (CD)   2.30593725
+BP...18                 Titulos     Heterocedasticidade (BP)   1.38113748
+F...19                   Acesso             F: pooling vs FE   0.89112791
+chisq...20               Acesso            LM: pooling vs RE   0.27233571
+...21                    Acesso            Hausman: FE vs RE   1.26011702
+...22                    Acesso        Autocorrelacao serial   4.93266612
+...23                    Acesso Dependencia transversal (CD)  11.13727094
+BP...24                  Acesso     Heterocedasticidade (BP)   0.05339986
+F...25             Rebaixamento             F: pooling vs FE   0.64268231
+chisq...26         Rebaixamento            LM: pooling vs RE   3.80879489
+...27              Rebaixamento            Hausman: FE vs RE   0.60710429
+...28              Rebaixamento        Autocorrelacao serial  27.53991581
+...29              Rebaixamento Dependencia transversal (CD)   9.46545558
+BP...30            Rebaixamento     Heterocedasticidade (BP)   2.67222074
+                                                                                                                       p_valor
+F...1      0.00000000000000000000000000000000000000000000000000000000000000000000000000000000011441417723000543897951541971736
+chisq...2  0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002166742
+...3       0.81164853445162987721772651639184914529323577880859375000000000000000000000000000000000000000000000000000000000000
+...4       0.06070778272180151619030752385697269346565008163452148437500000000000000000000000000000000000000000000000000000000
+...5       0.38179553534503485323625682212878018617630004882812500000000000000000000000000000000000000000000000000000000000000
+BP...6     0.84400946300278578693365716389962472021579742431640625000000000000000000000000000000000000000000000000000000000000
+F...7      0.00000000000000000000000000018780903583232428265964442104518639098387211561203002929687500000000000000000000000000
+chisq...8  0.00000000000000000000000000000000000000000106640481975845541535476146410843512057908810675144195556640625000000000
+...9       0.67289676291246358630360191455110907554626464843750000000000000000000000000000000000000000000000000000000000000000
+...10      0.00035677240172887818249122804381556761654792353510856628417968750000000000000000000000000000000000000000000000000
+...11      0.14611963436569533336673032408725703135132789611816406250000000000000000000000000000000000000000000000000000000000
+BP...12    0.22209377793494952668673647622199496254324913024902343750000000000000000000000000000000000000000000000000000000000
+F...13     0.00000000000618176771093276710040964605497038064640946686267852783203125000000000000000000000000000000000000000000
+chisq...14 0.00000000000000011392590020646324783020961191049025273969164118170738220214843750000000000000000000000000000000000
+...15      0.57240047477383781959758835000684484839439392089843750000000000000000000000000000000000000000000000000000000000000
+...16      0.00317588326587506372331026760491567983990535140037536621093750000000000000000000000000000000000000000000000000000
+...17      0.02111413858756994513243832045645831385627388954162597656250000000000000000000000000000000000000000000000000000000
+BP...18    0.23990748772948006228844519682752434164285659790039062500000000000000000000000000000000000000000000000000000000000
+F...19     0.72474368446276815625139988696901127696037292480468750000000000000000000000000000000000000000000000000000000000000
+chisq...20 0.60176924464240533207970429430133663117885589599609375000000000000000000000000000000000000000000000000000000000000
+...21      0.26162894208310172317055730673018842935562133789062500000000000000000000000000000000000000000000000000000000000000
+...22      0.02635362812586422923133433471321040997281670570373535156250000000000000000000000000000000000000000000000000000000
+...23      0.00000000000000000000000000008261214007518864735693520096049269341165199875831604003906250000000000000000000000000
+BP...24    0.81724946725967473337703950164723210036754608154296875000000000000000000000000000000000000000000000000000000000000
+F...25     0.98955942030341903503654066298622637987136840820312500000000000000000000000000000000000000000000000000000000000000
+chisq...26 0.05098412043314162755969221052509965375065803527832031250000000000000000000000000000000000000000000000000000000000
+...27      0.43588018461734340247559771341911982744932174682617187500000000000000000000000000000000000000000000000000000000000
+...28      0.00000015388560699675555557518202842715027145459316670894622802734375000000000000000000000000000000000000000000000
+...29      0.00000000000000000000292284129997163614469654624450356550369178876280784606933593750000000000000000000000000000000
+BP...30    0.10211345027745401259355872980449930764734745025634765625000000000000000000000000000000000000000000000000000000000
+                                                                           metodo
+F...1                                                  F test for twoways effects
+chisq...2                             Lagrange Multiplier Test -  (Breusch-Pagan)
+...3                                                                 Hausman Test
+...4       Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+...5                    Pesaran CD test for  cross-sectional dependence in panels
+BP...6                                             studentized Breusch-Pagan test
+F...7                                                  F test for twoways effects
+chisq...8                             Lagrange Multiplier Test -  (Breusch-Pagan)
+...9                                                                 Hausman Test
+...10      Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+...11                   Pesaran CD test for  cross-sectional dependence in panels
+BP...12                                            studentized Breusch-Pagan test
+F...13                                                 F test for twoways effects
+chisq...14                            Lagrange Multiplier Test -  (Breusch-Pagan)
+...15                                                                Hausman Test
+...16      Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+...17                   Pesaran CD test for  cross-sectional dependence in panels
+BP...18                                            studentized Breusch-Pagan test
+F...19                                                 F test for twoways effects
+chisq...20                            Lagrange Multiplier Test -  (Breusch-Pagan)
+...21                                                                Hausman Test
+...22      Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+...23                   Pesaran CD test for  cross-sectional dependence in panels
+BP...24                                            studentized Breusch-Pagan test
+F...25                                                 F test for twoways effects
+chisq...26                            Lagrange Multiplier Test -  (Breusch-Pagan)
+...27                                                                Hausman Test
+...28      Breusch-Godfrey/Wooldridge test for serial correlation in panel models
+...29                   Pesaran CD test for  cross-sectional dependence in panels
+BP...30                                            studentized Breusch-Pagan test
+           erro
+F...1      <NA>
+chisq...2  <NA>
+...3       <NA>
+...4       <NA>
+...5       <NA>
+BP...6     <NA>
+F...7      <NA>
+chisq...8  <NA>
+...9       <NA>
+...10      <NA>
+...11      <NA>
+BP...12    <NA>
+F...13     <NA>
+chisq...14 <NA>
+...15      <NA>
+...16      <NA>
+...17      <NA>
+BP...18    <NA>
+F...19     <NA>
+chisq...20 <NA>
+...21      <NA>
+...22      <NA>
+...23      <NA>
+BP...24    <NA>
+F...25     <NA>
+chisq...26 <NA>
+...27      <NA>
+...28      <NA>
+...29      <NA>
+BP...30    <NA>
+
+========== ROBUSTEZ: POISSON FE ==========
+
+========== ROBUSTEZ: DIVISAO CATEGORICA ==========
+# A tibble: 5 × 5
+  Divisao                   N_total N_pontos N_desempenho_ponderado N_clubes
+  <fct>                       <int>    <int>                  <int>    <int>
+1 Sem participação nacional      21        0                     21       13
+2 D                              54       54                     54       25
+3 C                             100      100                    100       47
+4 B                             100      100                    100       43
+5 A                             100      100                    100       29
+
+========== DIAGNOSTICO: ADOCAO ESCALONADA DA SAF ==========
+
+Adocao futura (controle ate o fim do painel) 
+                                           5 
+                    Nunca tratado (controle) 
+                                          46 
+                           Tratado no painel 
+                                          24 
+
+Teste conjunto de pre-tendencias:
+                     Desfecho                             Teste Estatistica gl1
+1        Desempenho_Ponderado Leads conjuntamente iguais a zero    1.257142   6
+2          Pontos_Brasileirao Leads conjuntamente iguais a zero    3.266537   6
+3 Desempenho_Relativo_Divisao Leads conjuntamente iguais a zero    3.845550   6
+  gl2     p_valor   N Clubes
+1  74 0.287677432 375     75
+2  74 0.006635658 354     75
+3  74 0.002155690 354     75
+
+Efeito medio pos-adocao (ATT agregado):
+                     Desfecho    Estimate  Std. Error    t value  Pr(>|t|)
+1        Desempenho_Ponderado 11.06820119 10.56359519  1.0477684 0.2981555
+2          Pontos_Brasileirao -0.28659278  3.02145713 -0.0948525 0.9246884
+3 Desempenho_Relativo_Divisao -0.05557768  0.06186047 -0.8984360 0.3718672
+
+Usada 
+  375 
+
+========== COBERTURA FINANCEIRA ==========
+                             variavel n_validos n_total percentual
+Receita_Total           Receita_Total       101     375   26.93333
+Divida_Total             Divida_Total        99     375   26.40000
+Folha_Salarial         Folha_Salarial        84     375   22.40000
+Valor_Elenco             Valor_Elenco       200     375   53.33333
+Gasto_Contratacoes Gasto_Contratacoes       200     375   53.33333
+
+========== EXPORTACAO FINAL ==========
+
+========== AVISOS METODOLOGICOS ==========
+* Interpretar F, LM, Hausman e diagnosticos em conjunto.
+* Os modelos principais usam efeitos fixos de clube e ano,
+  com erros-padrao agrupados por clube.
+* A adocao da SAF e escalonada; TWFE convencional pode nao
+  identificar um efeito causal medio adequado se os efeitos
+  variarem entre coortes ou ao longo do tempo.
+* O estudo de evento Sun-Abraham e complementar; o teste conjunto
+  de pre-tendencias esta em 12_Resultados_Sun_Abraham.xlsx.
+* O percentil de pontos compara clubes apenas dentro da mesma
+  divisao e ano; nao representa pontos absolutos.
+* Com cinco anos, testes de raiz unitaria em painel nao sao
+  prioridade nesta etapa.
+* Titulos, vices, terceiros e podios devem respeitar a auditoria
+  historica e as regras metodologicas da base.
+* Divida_Total deve ser interpretada conforme a definicao da fonte;
+  na base pesquisada com Sports Value, trata-se de divida liquida.
+* Folha salarial, gastos com contratacoes e investimento SAF
+  so devem entrar em modelos se houver cobertura valida suficiente.
+* Resultados estatisticos nao substituem a discussao de identificacao
+  causal, selecao para adocao da SAF e tendencias anteriores.
+
+========== SCRIPT CONCLUIDO ==========
+Arquivos salvos em: C:/Users/moral/OneDrive/Documentos/TCC/SAF/Verificacao_Claude/Rev5 
+Confira os avisos exibidos no Console antes de interpretar os resultados.

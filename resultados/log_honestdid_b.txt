@@ -1,0 +1,307 @@
+HonestDiD versao: 0.2.8 
+Maior diferenca de EP vs fixest: 0.000000000000001776357 
+
+========== Desempenho ponderado ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e    coef     ep
+factor(per)-3 -3 -17.434 21.003
+factor(per)-2 -2 -13.618 11.148
+factor(per)0   0  -2.291  7.080
+factor(per)1   1   0.562 11.552
+factor(per)2   2  30.013 15.970
+factor(per)3   3  35.725 23.647
+             Desfecho Janela_pre          Alvo Nivel Estimativa
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=0  0.95      -2.29
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+ Desempenho ponderado         -3           e=2  0.95      30.01
+                          Metodo Parametro      lb     ub Inclui_zero
+ Original (tendencias paralelas)        NA   -8.56  40.56        TRUE
+     Magnitudes relativas (Mbar)       0.0   -6.03  38.19        TRUE
+     Magnitudes relativas (Mbar)       0.5  -30.15  62.31        TRUE
+     Magnitudes relativas (Mbar)       1.0  -66.33 102.51        TRUE
+     Magnitudes relativas (Mbar)       1.5 -106.53 142.71        TRUE
+     Magnitudes relativas (Mbar)       2.0 -142.71 182.91        TRUE
+                   Suavidade (M)       0.0  -60.48  39.28        TRUE
+                   Suavidade (M)       2.5  -68.15  45.31        TRUE
+                   Suavidade (M)       5.0  -82.58  57.64        TRUE
+                   Suavidade (M)      10.0 -111.91  82.96        TRUE
+                   Suavidade (M)      20.0 -166.86 130.78        TRUE
+ Original (tendencias paralelas)        NA  -16.17  11.59        TRUE
+     Magnitudes relativas (Mbar)       0.0  -14.07  10.05        TRUE
+     Magnitudes relativas (Mbar)       0.5  -22.11  18.09        TRUE
+     Magnitudes relativas (Mbar)       1.0  -38.19  34.17        TRUE
+     Magnitudes relativas (Mbar)       1.5  -54.27  50.25        TRUE
+     Magnitudes relativas (Mbar)       2.0  -66.33  66.33        TRUE
+                   Suavidade (M)       0.0  -34.23  10.39        TRUE
+                   Suavidade (M)       2.5  -35.60  11.00        TRUE
+                   Suavidade (M)       5.0  -38.23  13.33        TRUE
+                   Suavidade (M)      10.0  -45.55  18.25        TRUE
+                   Suavidade (M)      20.0  -58.98  27.16        TRUE
+ Original (tendencias paralelas)        NA   -1.29  61.31        TRUE
+     Magnitudes relativas (Mbar)       0.0    2.01  58.29       FALSE
+     Magnitudes relativas (Mbar)       0.5  -26.13  86.43        TRUE
+     Magnitudes relativas (Mbar)       1.0  -70.35 134.67        TRUE
+     Magnitudes relativas (Mbar)       1.5 -114.57 182.91        TRUE
+     Magnitudes relativas (Mbar)       2.0 -166.83 231.16        TRUE
+                   Suavidade (M)       0.0  -63.83  59.50        TRUE
+                   Suavidade (M)       2.5  -72.65  66.65        TRUE
+                   Suavidade (M)       5.0  -89.99  81.04        TRUE
+                   Suavidade (M)      10.0 -125.07 111.16        TRUE
+                   Suavidade (M)      20.0 -190.30 168.62        TRUE
+Mensagens de aviso:
+1: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+2: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+3: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+4: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+5: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+6: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+7: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+8: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+9: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+10: Solution may be inaccurate. Try another solver, adjusting the solver settings,
+or solve with `verbose = TRUE` for more information. 
+Maior diferenca de EP vs fixest: 0.000000000000001776357 
+
+========== Desempenho ponderado ==========
+Periodos de evento: -4, -3, -2, 0, 1, 2, 3 | pre = 3 | pos = 4 
+               e    coef     ep
+factor(per)-4 -4 -44.108 37.406
+factor(per)-3 -3 -17.434 21.003
+factor(per)-2 -2 -13.618 11.148
+factor(per)0   0  -2.291  7.080
+factor(per)1   1   0.562 11.552
+factor(per)2   2  30.013 15.970
+factor(per)3   3  35.725 23.647
+             Desfecho Janela_pre          Alvo Nivel Estimativa
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4 Media e=0 a 3  0.95      16.00
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=0  0.95      -2.29
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+ Desempenho ponderado         -4           e=2  0.95      30.01
+                          Metodo Parametro      lb     ub Inclui_zero
+ Original (tendencias paralelas)        NA   -8.56  40.56        TRUE
+     Magnitudes relativas (Mbar)       0.0   -6.03  38.19        TRUE
+     Magnitudes relativas (Mbar)       0.5  -82.41 114.57        TRUE
+     Magnitudes relativas (Mbar)       1.0 -178.89 211.06        TRUE
+     Magnitudes relativas (Mbar)       1.5 -275.38 307.54        TRUE
+     Magnitudes relativas (Mbar)       2.0 -371.86 400.00        TRUE
+                   Suavidade (M)       0.0  -61.93  35.51        TRUE
+                   Suavidade (M)       2.5  -69.36  43.16        TRUE
+                   Suavidade (M)       5.0  -83.03  57.13        TRUE
+                   Suavidade (M)      10.0 -111.91  82.96        TRUE
+                   Suavidade (M)      20.0 -166.86 130.78        TRUE
+ Original (tendencias paralelas)        NA  -16.17  11.59        TRUE
+     Magnitudes relativas (Mbar)       0.0  -14.07  10.05        TRUE
+     Magnitudes relativas (Mbar)       0.5  -42.21  34.17        TRUE
+     Magnitudes relativas (Mbar)       1.0  -82.41  74.37        TRUE
+     Magnitudes relativas (Mbar)       1.5 -118.59 110.55        TRUE
+     Magnitudes relativas (Mbar)       2.0 -158.79 150.75        TRUE
+                   Suavidade (M)       0.0  -34.79   9.32        TRUE
+                   Suavidade (M)       2.5  -35.86  10.46        TRUE
+                   Suavidade (M)       5.0  -38.41  13.13        TRUE
+                   Suavidade (M)      10.0  -45.55  18.25        TRUE
+                   Suavidade (M)      20.0  -58.98  27.16        TRUE
+ Original (tendencias paralelas)        NA   -1.29  61.31        TRUE
+     Magnitudes relativas (Mbar)       0.0    2.01  58.29       FALSE
+     Magnitudes relativas (Mbar)       0.5  -90.45 150.75        TRUE
+     Magnitudes relativas (Mbar)       1.0 -203.02 263.32        TRUE
+     Magnitudes relativas (Mbar)       1.5 -319.60 379.90        TRUE
+     Magnitudes relativas (Mbar)       2.0 -400.00 400.00        TRUE
+                   Suavidade (M)       0.0  -65.63  54.31        TRUE
+                   Suavidade (M)       2.5  -74.42  63.34        TRUE
+                   Suavidade (M)       5.0  -90.76  80.08        TRUE
+                   Suavidade (M)      10.0 -125.07 111.16        TRUE
+                   Suavidade (M)      20.0 -190.30 168.62        TRUE
+Mensagens de aviso:
+1: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+2: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+3: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+4: In .ARP_computeCI(betahat = betahat, sigma = sigma, numPrePeriods = numPrePeriods,  :
+  CI is open at one of the endpoints; CI length may not be accurate
+5: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+Maior diferenca de EP vs fixest: 0.0000000000000008881784 
+
+========== Ranking nacional ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e    coef     ep
+factor(per)-3 -3   4.708  7.372
+factor(per)-2 -2   0.924  6.636
+factor(per)0   0  -3.784  2.407
+factor(per)1   1 -12.000  6.240
+factor(per)2   2 -19.078 10.067
+factor(per)3   3 -18.757 14.853
+         Desfecho Janela_pre          Alvo Nivel Estimativa
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3 Media e=0 a 3  0.95     -13.40
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=0  0.95      -3.78
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+ Ranking nacional         -3           e=2  0.95     -19.08
+                          Metodo Parametro      lb    ub Inclui_zero
+ Original (tendencias paralelas)        NA  -28.82  2.01        TRUE
+     Magnitudes relativas (Mbar)       0.0  -27.14  1.01        TRUE
+     Magnitudes relativas (Mbar)       0.5  -37.19  9.05        TRUE
+     Magnitudes relativas (Mbar)       1.0  -55.28 25.13        TRUE
+     Magnitudes relativas (Mbar)       1.5  -71.36 43.22        TRUE
+     Magnitudes relativas (Mbar)       2.0  -89.45 61.31        TRUE
+                   Suavidade (M)       0.0  -30.18 15.48        TRUE
+                   Suavidade (M)       0.5  -30.97 16.27        TRUE
+                   Suavidade (M)       1.0  -33.12 18.42        TRUE
+                   Suavidade (M)       2.0  -39.32 23.96        TRUE
+                   Suavidade (M)       4.0  -51.92 35.87        TRUE
+ Original (tendencias paralelas)        NA   -8.50  0.93        TRUE
+     Magnitudes relativas (Mbar)       0.0   -7.04 -1.01       FALSE
+     Magnitudes relativas (Mbar)       0.5  -11.06  3.02        TRUE
+     Magnitudes relativas (Mbar)       1.0  -19.10 11.06        TRUE
+     Magnitudes relativas (Mbar)       1.5  -25.13 17.09        TRUE
+     Magnitudes relativas (Mbar)       2.0  -33.17 25.13        TRUE
+                   Suavidade (M)       0.0  -10.40  7.74        TRUE
+                   Suavidade (M)       0.5  -10.51  7.85        TRUE
+                   Suavidade (M)       1.0  -10.87  8.20        TRUE
+                   Suavidade (M)       2.0  -12.16  9.23        TRUE
+                   Suavidade (M)       4.0  -15.15 11.95        TRUE
+ Original (tendencias paralelas)        NA  -38.81  0.65        TRUE
+     Magnitudes relativas (Mbar)       0.0  -37.19 -1.01       FALSE
+     Magnitudes relativas (Mbar)       0.5  -49.25  9.05        TRUE
+     Magnitudes relativas (Mbar)       1.0  -69.35 27.14        TRUE
+     Magnitudes relativas (Mbar)       1.5  -91.46 47.24        TRUE
+     Magnitudes relativas (Mbar)       2.0 -113.57 69.35        TRUE
+                   Suavidade (M)       0.0  -39.55 16.19        TRUE
+                   Suavidade (M)       0.5  -40.48 17.13        TRUE
+                   Suavidade (M)       1.0  -43.06 19.71        TRUE
+                   Suavidade (M)       2.0  -50.53 26.37        TRUE
+                   Suavidade (M)       4.0  -65.75 40.74        TRUE
+Mensagens de aviso:
+1: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+2: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+3: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+4: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+5: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+6: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+7: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+8: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+9: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+
+Arquivo salvo: 15_HonestDiD_Rev7b.xlsx

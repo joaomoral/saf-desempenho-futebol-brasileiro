@@ -1,0 +1,151 @@
+HonestDiD versao: 0.2.8 
+Maior diferenca de EP vs fixest: 0 
+
+========== Indice hierarquico (grossa) ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e   coef    ep
+factor(per)-3 -3 -0.490 0.228
+factor(per)-2 -2 -0.218 0.186
+factor(per)0   0  0.066 0.104
+factor(per)1   1  0.457 0.205
+factor(per)2   2  0.710 0.345
+factor(per)3   3  0.660 0.544
+                    Desfecho Janela_pre          Alvo Nivel Estimativa
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=0  0.95       0.07
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+ Indice hierarquico (grossa)         -3           e=2  0.95       0.71
+                          Metodo Parametro    lb   ub Inclui_zero
+ Original (tendencias paralelas)        NA -0.07 1.01        TRUE
+     Magnitudes relativas (Mbar)      1.00 -1.17 2.13        TRUE
+     Magnitudes relativas (Mbar)      1.50 -1.89 2.93        TRUE
+     Magnitudes relativas (Mbar)      2.00 -2.69 3.66        TRUE
+                   Suavidade (M)      0.00 -0.86 0.60        TRUE
+                   Suavidade (M)      0.04 -0.99 0.73        TRUE
+                   Suavidade (M)      0.08 -1.22 0.97        TRUE
+                   Suavidade (M)      0.15 -1.62 1.39        TRUE
+                   Suavidade (M)      0.30 -2.44 2.26        TRUE
+ Original (tendencias paralelas)        NA -0.14 0.27        TRUE
+     Magnitudes relativas (Mbar)      1.00 -0.52 0.68        TRUE
+     Magnitudes relativas (Mbar)      1.50 -0.84 1.01        TRUE
+     Magnitudes relativas (Mbar)      2.00 -1.17 1.33        TRUE
+                   Suavidade (M)      0.00 -0.46 0.10        TRUE
+                   Suavidade (M)      0.04 -0.48 0.12        TRUE
+                   Suavidade (M)      0.08 -0.52 0.18        TRUE
+                   Suavidade (M)      0.15 -0.61 0.27        TRUE
+                   Suavidade (M)      0.30 -0.79 0.47        TRUE
+ Original (tendencias paralelas)        NA  0.03 1.39       FALSE
+     Magnitudes relativas (Mbar)      1.00 -1.25 2.77        TRUE
+     Magnitudes relativas (Mbar)      1.50 -2.13 3.66        TRUE
+     Magnitudes relativas (Mbar)      2.00 -3.10 4.62        TRUE
+                   Suavidade (M)      0.00 -0.92 0.88        TRUE
+                   Suavidade (M)      0.04 -1.06 1.04        TRUE
+                   Suavidade (M)      0.08 -1.34 1.33        TRUE
+                   Suavidade (M)      0.15 -1.82 1.83        TRUE
+                   Suavidade (M)      0.30 -2.81 2.87        TRUE
+Mensagens de aviso:
+1: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+2: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+3: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+Maior diferenca de EP vs fixest: 0 
+
+========== Indice hierarquico (fina) ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e   coef    ep
+factor(per)-3 -3 -0.490 0.228
+factor(per)-2 -2 -0.218 0.186
+factor(per)0   0  0.066 0.104
+factor(per)1   1  0.457 0.205
+factor(per)2   2  0.710 0.345
+factor(per)3   3  0.660 0.544
+                  Desfecho Janela_pre          Alvo Nivel Estimativa
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3 Media e=0 a 3  0.95       0.47
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=0  0.95       0.07
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+ Indice hierarquico (fina)         -3           e=2  0.95       0.71
+                          Metodo Parametro    lb   ub Inclui_zero
+ Original (tendencias paralelas)        NA -0.07 1.01        TRUE
+     Magnitudes relativas (Mbar)      0.00 -0.06 1.00        TRUE
+     Magnitudes relativas (Mbar)      0.50 -0.50 1.49        TRUE
+                   Suavidade (M)      0.00 -0.86 0.60        TRUE
+                   Suavidade (M)      0.04 -0.99 0.73        TRUE
+                   Suavidade (M)      0.08 -1.22 0.97        TRUE
+                   Suavidade (M)      0.15 -1.62 1.39        TRUE
+                   Suavidade (M)      0.30 -2.44 2.26        TRUE
+ Original (tendencias paralelas)        NA -0.14 0.27        TRUE
+     Magnitudes relativas (Mbar)      0.00 -0.14 0.27        TRUE
+     Magnitudes relativas (Mbar)      0.50 -0.31 0.47        TRUE
+                   Suavidade (M)      0.00 -0.46 0.10        TRUE
+                   Suavidade (M)      0.04 -0.48 0.12        TRUE
+                   Suavidade (M)      0.08 -0.52 0.18        TRUE
+                   Suavidade (M)      0.15 -0.61 0.27        TRUE
+                   Suavidade (M)      0.30 -0.79 0.47        TRUE
+ Original (tendencias paralelas)        NA  0.03 1.39       FALSE
+     Magnitudes relativas (Mbar)      0.00  0.05 1.37       FALSE
+     Magnitudes relativas (Mbar)      0.50 -0.47 1.95        TRUE
+                   Suavidade (M)      0.00 -0.92 0.88        TRUE
+                   Suavidade (M)      0.04 -1.06 1.04        TRUE
+                   Suavidade (M)      0.08 -1.34 1.33        TRUE
+                   Suavidade (M)      0.15 -1.82 1.83        TRUE
+                   Suavidade (M)      0.30 -2.81 2.87        TRUE
+Mensagens de aviso:
+1: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+2: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+3: In seq_len(length.out - 2L) * (del/n1) :
+  Reciclar uma array de comprimento 1 na aritmética de vetor-array foi descontinuado.
+  Em vez disso, use c() ou as.vector().
+
+Arquivo salvo: 16_HonestDiD_IH_Rev8.xlsx

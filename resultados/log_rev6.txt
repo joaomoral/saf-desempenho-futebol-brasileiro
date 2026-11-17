@@ -1,0 +1,60 @@
+Clubes nas Series A, B ou C em 2021: 60 
+Painel ampliado: 218 clubes | Populacao 2021: 124 clubes
+
+========== ROBUSTEZ ==========
+                          Especificacao    N Clubes Clubes_que_mudam     SAF
+1                             Principal  375     75               24  5.0293
+2           R1 Aproveitamento ponderado  375     75               24  8.4662
+3                   R2 Ranking nacional  375     75               24 -8.9556
+4            R3 Sem Red Bull Bragantino  370     74               24  4.7235
+5      R4 Regra anterior (ano completo)  375     75               21  4.1505
+6             R5 Amostra fixada em 2021  300     60               17 -2.1433
+7            R6a Divida liquida - todas   99     21                6  4.1903
+8  R6b Divida liquida - sem divida zero   95     20                6  4.0275
+9    R7 Todos os clubes nacionais (A-D) 1090    218               45  4.2062
+10   R8 Populacao de 2021 (A-D em 2021)  620    124               25  3.4391
+11           R9a Pesos 2/1/0/0 (artigo)  375     75               24  3.0746
+12                    R9b Pesos 6/4/2/1  375     75               24  8.1039
+13                    R9c Pesos 8/4/2/1  375     75               24 16.9579
+14        R9d Pesos 1/1/1/1 (so pontos)  375     75               24  0.8331
+       EP       p     ATT EP_ATT   p_ATT  F_pre gl2    p_pre
+1   9.664 0.60432  11.068 10.564 0.29816 1.2571  74 0.287677
+2   8.134 0.30132  13.274 10.129 0.19411 0.7912  74 0.579667
+3   4.685 0.05983 -11.660  6.438 0.07418 0.9783  74 0.446115
+4   9.700 0.62776  10.777 10.608 0.31300 1.1251  73 0.356385
+5  10.747 0.70044  13.927 11.839 0.24322 3.2660  74 0.006643
+6  12.208 0.86124   4.754 13.180 0.71959 4.3160  59 0.001129
+7  20.353 0.83896      NA     NA      NA     NA  NA       NA
+8  21.385 0.85261      NA     NA      NA     NA  NA       NA
+9   4.967 0.39807   8.169  5.840 0.16330 0.3423 217 0.913846
+10  8.334 0.68056   7.921  9.315 0.39675 1.2636 123 0.279116
+11  5.836 0.59989   7.273  6.643 0.27718 0.8656  74 0.524335
+12 14.915 0.58854  18.341 16.366 0.26605 1.0930  74 0.374619
+13 21.426 0.43120  32.811 25.695 0.20561 1.1579  74 0.338094
+14  2.643 0.75353   2.125  3.352 0.52809 3.5240  74 0.004021
+
+Divida zero excluida:
+         Clube  Ano Serie_Brasileirao SAF
+1 Athletico-PR 2023                 A   0
+2 Athletico-PR 2024                 A   0
+3     Mirassol 2024                 B   0
+4     Mirassol 2025                 A   0
+
+Controle de divida:
+                         Especificacao  N Coef_controle EP_controle p_controle
+7           R6a Divida liquida - todas 99        1.3087       1.044     0.2246
+8 R6b Divida liquida - sem divida zero 95       -0.8079       7.327     0.9134
+            Amostra Y_media  Y_dp Y_w2100_media Y_w2100_dp Y_w6421_media
+1         Principal  113.35 82.88         41.34      45.73         154.7
+2    R7 Todos (A-D)   43.38 70.64            NA         NA            NA
+3 R8 Populacao 2021   70.61 82.94            NA         NA            NA
+  Y_w6421_dp Y_w8421_media Y_w8421_dp Y_w1111_media Y_w1111_dp
+1      127.5         182.3      168.5         37.72      18.72
+2         NA            NA         NA            NA         NA
+3         NA            NA         NA            NA         NA
+# A tibble: 1 × 6
+  Media_Y_Aprov DP_Y_Aprov Media_Ranking DP_Ranking N_Ranking N_Y_Aprov
+          <dbl>      <dbl>         <dbl>      <dbl>     <int>     <int>
+1          117.       60.9          42.3       30.5       375       375
+
+Arquivo salvo: 14_Robustez_Rev6.xlsx

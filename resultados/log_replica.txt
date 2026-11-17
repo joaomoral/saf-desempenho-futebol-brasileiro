@@ -1,0 +1,58 @@
+Clubes da replica: 26 
+
+========== EFEITO DA SAF NA REPLICA E NA PONTE ==========
+                                    Modelo       Termo Estimativa Erro_padrao
+1     M1 Replica - classificacao do artigo  SAF_Artigo      3.419      12.159
+2       M1b Replica - artigo + ln(receita)  SAF_Artigo     21.784      15.050
+3       M1b Replica - artigo + ln(receita) log_Receita     25.256      10.651
+4       M2 Replica - classificacao da base         SAF     11.149      13.541
+5         M2b Replica - base + ln(receita)         SAF     11.290      17.564
+6         M2b Replica - base + ln(receita) log_Receita     22.521      12.067
+7                  M3 26 clubes, 2021-2025         SAF      2.761      11.018
+8 M4 75 clubes, 2021-2025, pesos do artigo         SAF      3.075       5.836
+9   M5 75 clubes, 2021-2025, pesos da base         SAF      5.029       9.664
+  p_valor   N Clubes Clubes_que_mudam_SAF
+1 0.78088  78     26                    5
+2 0.16407  58     20                    3
+3 0.02846  58     20                    3
+4 0.41810  78     26                    5
+5 0.52804  58     20                    4
+6 0.07749  58     20                    4
+7 0.80422 130     26                   10
+8 0.59989 375     75                   24
+9 0.60432 375     75                   24
+
+========== TESTES DA REPLICA ==========
+      Classificacao_SAF SAF_pooled p_pooled SAF_FE_sem_cluster
+F...1        SAF_Artigo     -1.115   0.8835              3.419
+F...2               SAF     -5.300   0.5000             11.149
+      EP_FE_sem_cluster p_FE_sem_cluster F_pooled_vs_FE         p_F Hausman
+F...1             12.67           0.7884          4.330 0.000004320 0.05327
+F...2             12.58           0.3797          4.384 0.000003643 1.01457
+      gl_Hausman p_Hausman
+F...1          1    0.8175
+F...2          1    0.3138
+
+Clube-anos com classificacao SAF diferente do artigo: 7 
+                Clube  Ano Serie_Brasileirao Pontos Peso_Artigo Y_Artigo
+1         Atlético-GO 2023                 B     64           1       64
+2         Atlético-MG 2023                 A     66           2      132
+3            Coritiba 2022                 A     42           2       84
+4 Red Bull Bragantino 2022                 A     44           2       88
+5 Red Bull Bragantino 2023                 A     62           2      124
+6 Red Bull Bragantino 2024                 A     44           2       88
+7               Vasco 2022                 B     62           1       62
+  SAF_Artigo SAF
+1          0   1
+2          1   0
+3          0   1
+4          1   0
+5          1   0
+6          1   0
+7          1   0
+# A tibble: 1 × 7
+      N Clubes Media_Y  DP_Y Min_Y Max_Y Obs_com_receita
+  <int>  <int>   <dbl> <dbl> <dbl> <dbl>           <int>
+1    78     26    93.1  31.4     0   162              58
+
+Arquivo salvo: 13_Replica_Sousa_et_al.xlsx

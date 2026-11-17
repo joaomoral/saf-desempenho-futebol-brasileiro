@@ -1,0 +1,53 @@
+HonestDiD versao: 0.2.8 
+Maior diferenca de EP vs fixest: 0.000000000000001776357 
+
+========== Desempenho ponderado ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e    coef     ep
+factor(per)-3 -3 -17.434 21.003
+factor(per)-2 -2 -13.618 11.148
+factor(per)0   0  -2.291  7.080
+factor(per)1   1   0.562 11.552
+factor(per)2   2  30.013 15.970
+factor(per)3   3  35.725 23.647
+             Desfecho Janela_pre Alvo Nivel Estimativa
+ Desempenho ponderado         -3  e=0  0.95      -2.29
+ Desempenho ponderado         -3  e=0  0.95      -2.29
+ Desempenho ponderado         -3  e=0  0.95      -2.29
+ Desempenho ponderado         -3  e=2  0.95      30.01
+ Desempenho ponderado         -3  e=2  0.95      30.01
+ Desempenho ponderado         -3  e=2  0.95      30.01
+                          Metodo Parametro     lb    ub Inclui_zero
+ Original (tendencias paralelas)        NA -16.17 11.59        TRUE
+     Magnitudes relativas (Mbar)       0.0 -16.00 11.50        TRUE
+     Magnitudes relativas (Mbar)       0.5 -25.75 21.50        TRUE
+ Original (tendencias paralelas)        NA  -1.29 61.31        TRUE
+     Magnitudes relativas (Mbar)       0.0  -0.75 60.75        TRUE
+     Magnitudes relativas (Mbar)       0.5 -28.00 90.25        TRUE
+Maior diferenca de EP vs fixest: 0.0000000000000008881784 
+
+========== Ranking nacional ==========
+Periodos de evento: -3, -2, 0, 1, 2, 3 | pre = 2 | pos = 4 
+               e    coef     ep
+factor(per)-3 -3   4.708  7.372
+factor(per)-2 -2   0.924  6.636
+factor(per)0   0  -3.784  2.407
+factor(per)1   1 -12.000  6.240
+factor(per)2   2 -19.078 10.067
+factor(per)3   3 -18.757 14.853
+         Desfecho Janela_pre Alvo Nivel Estimativa
+ Ranking nacional         -3  e=0  0.95      -3.78
+ Ranking nacional         -3  e=0  0.95      -3.78
+ Ranking nacional         -3  e=0  0.95      -3.78
+ Ranking nacional         -3  e=2  0.95     -19.08
+ Ranking nacional         -3  e=2  0.95     -19.08
+ Ranking nacional         -3  e=2  0.95     -19.08
+                          Metodo Parametro     lb   ub Inclui_zero
+ Original (tendencias paralelas)        NA  -8.50 0.93        TRUE
+     Magnitudes relativas (Mbar)       0.0  -8.50 0.75        TRUE
+     Magnitudes relativas (Mbar)       0.5 -12.75 4.75        TRUE
+ Original (tendencias paralelas)        NA -38.81 0.65        TRUE
+     Magnitudes relativas (Mbar)       0.0 -38.25 0.25        TRUE
+     Magnitudes relativas (Mbar)       0.5 -51.00 9.00        TRUE
+
+Arquivo salvo: 15b_HonestDiD_grade_fina.xlsx
